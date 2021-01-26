@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new-post.css" />
+    <title>My Blog</title>
+  </head>
+  <body class="home-page">
+    <header>
+      <div class="profile-image"></div>
+      <div class="profile-name">Ryan Trinh</div>
+      <div class="subtext">Let's add a new blog post!</div>
+    </header>
+
+    <div class="main">
+      <div class="navigation">
+        <a href="index.html">Back</a>
+      </div>
+      <div class="form-container">
+        <form>
+          <input
+            id="form-post-title"
+            type="text"
+            name="post-title"
+            placeholder="Post Title"
+          />
+          <textarea
+            name="post-content"
+            id="form-post-content"
+            placeholder="Post Content"
+          ></textarea>
+          <div>
+            <label for="form-post-image">Choose Image</label>
+            <input
+              type="file"
+              name="post-image"
+              id="form-post-image"
+              accept="image/*"
+            />
+          </div>
+          <button type="button" id="form-post-submit" onclick="submitNewPost()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer><p>&copy; Copyright 2020</p></footer>
+    <script src="./new-post.js"></script>
+  </body>
+</html>
